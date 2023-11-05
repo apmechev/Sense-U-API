@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "sense-u-client"
+version = "0.1.0"
+description = "Sense-U Baby monitor API"
+authors = ["Alexandar Mechev <apmechev@gmail.com>"]
+readme = "README.md"
+packages = [{include = "sense_u_client"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
